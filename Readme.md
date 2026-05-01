@@ -170,6 +170,8 @@ clang client_linux.c -o client
 #### Note:  
 Ensure that the every node is aware of the other by making sure the nodes.txt on evry node is populated with the details of the available nodes before running.  
 
+Steps to run:  
+
 1. Start multiple nodes
 2. Ensure nodes register in nodes.txt
 3. Allow coordinator election
