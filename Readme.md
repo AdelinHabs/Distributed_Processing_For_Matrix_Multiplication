@@ -167,6 +167,9 @@ clang client_linux.c -o client
 
 ## 10. Running the System
 
+#### Note:  
+Ensure that the every node is aware of the other by making sure the nodes.txt on evry node is populated with the details of the available nodes before running.  
+
 1. Start multiple nodes
 2. Ensure nodes register in nodes.txt
 3. Allow coordinator election
@@ -184,6 +187,9 @@ Example:
 ```bash
 node1 192.168.1.10 5000
 ```
+
+#### Note:  
+Ensure that the every node is aware of the other by making sure the nodes.txt on evry node is populated with the details of the available nodes before running.  
 
 ---
 
