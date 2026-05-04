@@ -3,19 +3,6 @@
  *
  * Compile:  gcc node.c -o node.exe -lws2_32
  *
- * nodes.txt is created automatically.
- * Each node detects its own LAN IP on startup — no manual config.
- *
- * The coordinator answers UDP broadcasts on ANNOUNCE_PORT so
- * clients can find it without knowing any IP address.
- *
- * Differences from the Linux version:
- *   - Winsock2 instead of POSIX sockets
- *   - gethostname/gethostbyname for IP detection (no getifaddrs on Windows)
- *   - SO_RCVTIMEO/SO_SNDTIMEO take an int (milliseconds) not struct timeval
- *   - Sleep(ms) instead of usleep/sleep
- *   - CreateThread instead of pthread_create
- *   - send() does not support MSG_NOSIGNAL (not needed on Windows)
  */
 
 #include <stdio.h>
